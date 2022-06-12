@@ -26,9 +26,9 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
+// Create a variable called name and assign it the string 'Dane'.
+// We write a conditional that checks if name is equal to 'Mary', and if so, log in the console the string 'Hi, Mary!'.
+// If the variable name is anything else, log in the console the string 'How do you do?'.
 //
 
 //CODE
@@ -45,10 +45,16 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// Create a variable called secret, it has no value (undefined).
+// Create a variable called code and assign it the value 123.
+// Create a conditional that checks if the variable code is exactly the value 123, and if so, 
+// assign the variable secret the string 'super'.
+// Additionally, multiply the variable code by 2.
+// Create another conditional that checks if the variable code is greater than 250 and if so, 
+// assign the variable super the string 'duper'.
+// Finally, log to the console the result of the variable secret.
+// The console should log 'super' (this is because the value of code is 246, 
+// and doesn't result in the previous conditional doing anything).
 
 //CODE
 /*
@@ -70,10 +76,19 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// Create a variable named isStudent and assign the boolean true to it.
+// Create another variable named age and assign it the value 34.
+// Create a third variable name zip and assign it the value 55407.
+// Create a conditional that first checks if the variable isStudent is true and 
+// if the variable zip has a value greater than 80000.
+// If this is true, log out into the console, 'You're a student on the West Coast!'.
+// Check the next else if conditional to see if the isStudent conditional is false or
+// if the age variable is less than 30, and if either of these is the case,
+// log in the console, 'What are your hobbies?'
+// Then, check the next else if statement to see if the variable isStudent is true,
+// Log into the console 'Welcome to Prime!'
+// And if none of these conditions pass the else if test, log into the console 'How about the weather?'
+// After the code is run, the console will log 'Welcome to Prime!'
 
 //CODE
 /*
