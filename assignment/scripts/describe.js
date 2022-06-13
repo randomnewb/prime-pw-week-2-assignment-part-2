@@ -144,6 +144,12 @@ if (number >= 2) {
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true 
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
+//Potential Solution:
+//There are three variables as described and the code if run properly should 
+//set the variables colorOne and colorTwo both to 'purple'.
+//The conditional is true (the variabe mix is indeed true), however, in the same curly brackets, 
+// the colorTwo should also be set to 'purple'. The coder forgot to do so.
+
 /*
 let colorOne = 'red';
 let colorTwo = 'blue';
@@ -151,6 +157,8 @@ let mix = true;
 
 if (mix === true) {
   colorOne = 'purple';
+  //Also set colorTwo to purple
+  colorTwo = 'purple';
 }
 */
 
@@ -158,10 +166,23 @@ if (mix === true) {
 // We check if temp is higher than 39 and if time is greater or equal to  4 
 // -- they are so we console.log 'throw away the food!'
 
+//Potential solution:
+//The variable temp is indeed set to the value of 40, but time is declared as a constant. In this scenario, it may be OK
+// as long time doesn't need to be changed, but once a constant is declared with a particular value it cannot be changed.
+//As for the conditional, the code description calls for both variables, temp and time, to be met ("and"), however,
+// the operand used is || which would cause the conditional to be met if either of the variables meet their requirements
+//as it means "or". The correct operand to use would be && which would cause the conditional to be met only
+//if both the variables meet their requirements ("and").
+//The console will log 'throw away the food!' since the operand || is used and 
+// either of the variables have met their conditions.
+//
+
 /*
 let temp = 40;
 const time = 4;
 
+//Rewrite as 
+//if (temp > 39 && time >= 4) {
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -171,9 +192,23 @@ if (temp > 39 || time >= 4) {
 // We check if age is greater than or equal to minAge 
 // -- it is, so we console.log 'enter'.
 
+//Potential solution:
+//The code description is written such that age is checked to be greater than or equal to minAge,
+//however in the code, minAge is written first and the operand less than or equal to (<=) is used.
+//Also, if minAge is less than or equal to age, the result will log 'no entry', when the code description
+//stated that the console should log 'enter'.
+
 /*
 let age = 21;
 const minAge = 21;
+
+//Potential solution:
+// if (age >= minAge) {
+// console.log('enter');
+// } else {
+//   console.log('no entry');
+//}
+//The console will log 'enter').
 
 if(minAge <= age) {
   console.log('no entry');
